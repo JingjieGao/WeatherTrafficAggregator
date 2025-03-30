@@ -1,4 +1,4 @@
-# *Team Name Here - Team Project - Weather Traffic Aggregator*
+# *Cloud Navigators - Team Project - Weather Traffic Aggregator*
 
 ---
 
