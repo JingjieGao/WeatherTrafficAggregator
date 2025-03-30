@@ -2,26 +2,30 @@
 
 ---
 
-### Week 9
+### Week 9 - Setup
 
-- [ ] Establish ground rules / team charter
-- [ ] Complete team resume
-- [ ] Create team repo and structure directory
-- [ ] Fill out README with problem statement, technologies, ect.
-- [ ] Create high-level project plan
-- [ ] Establish team member roles for future meetings
-
----
-
-### Week 10
+- [ ] Brainstorm ideas
+- [ ] Setup Github repo & project structure
+- [ ] Obtain API keys (WeatherAPI & Google Maps API)
+- [ ] Establish ground rules, team charter, roles
+- [ ] Propose resources to be used
+- [ ] Establish high-level project plan
 
 ---
 
-### Week 11
+### Week 10 - API integration & UI creation
+
+- [ ] Integrate WeatherAPI
+- [ ] Integrate Google Maps API
+- [ ] Style with Bootstrap
 
 ---
 
-### Week 12
+### Week 11 - Web service documentation
+
+---
+
+### Week 12 - Testing, enhancing, and deploying
 
 - [ ] Complete testing
 - [ ] Final changes made

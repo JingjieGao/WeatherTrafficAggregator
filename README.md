@@ -12,6 +12,12 @@ The service provides the following:
 * Get directions, including the optimal route considering traffic data
 ---
 
+### Resources
+
+* Traffic report
+* Weather report
+* Incident report (maybe?)
+
 ### Project Technologies/Techniques
 
 ---
