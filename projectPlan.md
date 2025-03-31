@@ -4,12 +4,12 @@
 
 ### Week 9 - Setup
 
-- [ ] Brainstorm ideas
-- [ ] Setup Github repo & project structure
-- [ ] Obtain API keys (WeatherAPI & Google Maps API)
-- [ ] Establish ground rules, team charter, roles
-- [ ] Propose resources to be used
-- [ ] Establish high-level project plan
+- [X] Brainstorm ideas
+- [X] Setup Github repo & project structure
+- [X] Obtain API keys (WeatherAPI & Google Maps API)
+- [X] Establish ground rules, team charter, roles
+- [X] Propose resources to be used
+- [X] Establish high-level project plan
 
 ---
 
