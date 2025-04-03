@@ -18,6 +18,8 @@ The service provides the following:
 
 * Traffic report
 * Weather report
+    * WeatherAPI
+    * GET /current.json
 * Incident report (maybe?)
 
 ### Project Technologies/Techniques

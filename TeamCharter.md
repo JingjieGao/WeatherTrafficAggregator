@@ -47,7 +47,43 @@ and the team is updated on the changes as soon as possible.
 * pull before pushing
 
 ---
+### Escalation Plan
 
+    Step 1: Initial Check-In (Within 24-48 Hours of No Response) 
+
+      Send a direct message (DM on Discord and Slack) asking if they’re okay and checking on their progress. 
+
+      If no response, tag them in the team chat or project management tool (Discord/Slack). 
+
+ 
+
+    Step 2: Team Discussion (After 48-72 Hours of No Response) 
+
+      Bring up the issue in a team meeting. 
+
+      Assign someone to try another contact method. 
+
+      Assess if their absence is causing blockers and redistribute urgent tasks if needed. 
+
+ 
+
+    Set 3: Notify a Professor (After 3-5 Days of No Response) 
+
+      If the person is still unresponsive, inform Paula. 
+
+      Decide whether to reassign their responsibilities permanently. 
+
+ 
+
+    Step 4: Adjust & Document (After 1 Week of No Response) 
+
+      Officially document their absence and any decisions made. 
+
+      Reallocate remaining work across the team. 
+
+      If they reappear, have a conversation about expectations moving forward. 
+
+---
 ### Brainstorm project ideas
 
 * Selected project way: Manipulated information from existing services and presented it in a new way
