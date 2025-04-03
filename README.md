@@ -34,6 +34,10 @@ The service provides the following:
 
 ---
 
+### [Team Charter](TeamCharter.md)
+
+---
+
 ### Project Progress
 
 - [Time log](TimeLog.md)
