@@ -92,6 +92,20 @@ and the team is updated on the changes as soon as possible.
     * Google Maps API
     
 ---
+### Development/Review/Branching Strategy
+
+* Create a New Branch for Each Contribution
+  * Every team member should create a new branch for each contribution they are working on. This ensures that each change is isolated and easier to manage.
+
+* Review Pull Requests
+  * At least one team member should review the PR before merging. All team members are responsible for reviewing PRs from others. Code reviews ensure quality, consistency, and help identify potential issues before merging into the main branch.
+
+* Merge Changes to the Main Branch
+  * Once the PR is reviewed and approved, the changes should be merged into the main branch.
+
+* Close the branch
+  * Close the branch if the team member feels that it is no longer necessary after merging. This helps keep the repository clean and organized.
+---
 
 ### Create a team project repo under one team member’s GitHub profile 
 
