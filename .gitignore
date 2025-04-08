@@ -41,3 +41,7 @@ build/
 
 ### Logs ###
 /logs
+
+### Secret ##
+src/main/resources/.env
+cognito.properties
