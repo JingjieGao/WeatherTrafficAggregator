@@ -1,7 +1,6 @@
-package teamproject.weathertrafficaggregator.weatherApi;
+package com.weathertrafficaggregator.weatherApi;
 
-import com.teamproject.weathertrafficaggregator.persistence.WeatherResponseDao;
-import com.weatherApi.Current;
+import com.weathertrafficaggregator.persistence.WeatherResponseDao;
 import com.weatherApi.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

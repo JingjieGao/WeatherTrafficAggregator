@@ -1,4 +1,4 @@
-package com.teamproject.weathertrafficaggregator.restful;
+package com.weathertrafficaggregator.restful;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
@@ -7,9 +7,11 @@ import java.util.Set;
 
 @ApplicationPath("/api")
 public class WeatherApiApplication extends Application {
+
+    @Override
     public Set<Class<?>> getClasses() {
-        HashSet h = new HashSet<Class<?>>();
-        h.add(WeatherApiService.class);
-        return h;
+        HashSet<Class<?>> classSet = new HashSet<Class<?>>();
+        classSet.add(WeatherApiService.class);
+        return classSet;
     }
 }

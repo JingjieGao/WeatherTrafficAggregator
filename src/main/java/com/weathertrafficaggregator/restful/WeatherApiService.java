@@ -1,14 +1,13 @@
-package com.teamproject.weathertrafficaggregator.restful;
+package com.weathertrafficaggregator.restful;
 
-import com.teamproject.weathertrafficaggregator.persistence.CurrentWeatherDao;
-import com.teamproject.weathertrafficaggregator.persistence.WeatherResponseDao;
-import com.weatherApi.Current;
+import com.weathertrafficaggregator.persistence.WeatherResponseDao;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
 @Path("/current")
 public class WeatherApiService {
+
     @GET
     @Produces("text/plain")
     @Path("/hello")
