@@ -18,6 +18,7 @@ public class RestApp extends Application {
         HashSet<Class<?>> classSet = new HashSet<Class<?>>();
         classSet.add(WeatherApiService.class);
         classSet.add(IncidentsResource.class);
+        classSet.add(CombinedService.class);
         return classSet;
     }
 }
