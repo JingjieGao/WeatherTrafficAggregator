@@ -3,20 +3,33 @@ package com.mapquestApi.traffic.geocoding;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * The type Lat lng.
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class LatLng{
 
 	@JsonProperty("lng")
-	private Object lng;
+	private double lng;
 
 	@JsonProperty("lat")
-	private Object lat;
+	private double lat;
 
-	public Object getLng(){
+	/**
+	 * Get lng double.
+	 *
+	 * @return the double
+	 */
+	public double getLng(){
 		return lng;
 	}
 
-	public Object getLat(){
+	/**
+	 * Get lat double.
+	 *
+	 * @return the double
+	 */
+	public double getLat(){
 		return lat;
 	}
 

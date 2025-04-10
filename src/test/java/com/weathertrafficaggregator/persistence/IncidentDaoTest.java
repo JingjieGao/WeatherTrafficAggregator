@@ -11,31 +11,39 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * The type Incident dao test.
+ */
 class IncidentDaoTest {
+    /**
+     * The Incident dao.
+     */
     IncidentDao incidentDao;
 
+    /**
+     * Sets up method to be performed before each test and instantiates incident dao.
+     */
     @BeforeEach
     void setUp() {
         incidentDao = new IncidentDao();
     }
 
+    /**
+     * Gets incident response success.
+     */
     @Test
     void getIncidentResponseSuccess() {
         String response = incidentDao.createIncidentsResponse("43.19488,-89.42710,43.04996,-89.22860");
-        //assertEquals("???",incidentDao.incidentsResponse("43.19488,-89.42710,43.04996,-89.22860"));
+        assertNotNull(response);
+
         ObjectMapper mapper = new ObjectMapper();
-
         try {
-            JsonNode node = mapper.readTree(response);
-            JsonNode incidents = node.path("incidents");
-            assertNotNull(incidents);
-            assertTrue(incidents.isArray());
             Incidents ins = mapper.readValue(response, Incidents.class);
-        for(IncidentsItem item : ins.getIncidents()) {
-            System.out.println(item);
-        }
-
-
+            assertNotNull(ins);
+            assertTrue(!ins.getIncidents().isEmpty());
+            assertTrue(ins.getIncidents().get(0).getType() >= 1 || ins.getIncidents().get(0).getType() <= 4);
+            assertTrue(ins.getIncidents().get(0).getSeverity() >= 1 || ins.getIncidents().get(0).getSeverity() <= 4);
+            assertTrue(ins.getIncidents().get(0).getStartTime().length() == 19);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
