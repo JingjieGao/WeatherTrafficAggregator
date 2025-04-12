@@ -37,7 +37,7 @@ public class WeatherApiService {
         // Prepare the simplified response
         Map<String, Object> simplifiedResponse = new HashMap<>();
 
-        // Add required fields from 'current'
+        // Fields from 'current'
         Map<String, Object> currentDetails = new HashMap<>();
         currentDetails.put("feelslike_f", current.getFeelslikeF());
         currentDetails.put("temp_f", current.getTempF());
@@ -45,7 +45,7 @@ public class WeatherApiService {
         currentDetails.put("humidity", current.getHumidity());
         currentDetails.put("wind_dir", current.getWindDir());
 
-        // Add required fields from 'location'
+        // Fields from 'location'
         Map<String, Object> locationDetails = new HashMap<>();
         locationDetails.put("localtime", location.getLocaltime());
         locationDetails.put("name", location.getName());
