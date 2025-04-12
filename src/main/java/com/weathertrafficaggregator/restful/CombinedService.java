@@ -54,7 +54,29 @@ public class CombinedService {
                                     @QueryParam("radius") double radiusInMiles) {
         try {
             WeatherResponseDao responseDao = new WeatherResponseDao();
-            com.weatherApi.Response response = responseDao.searchLocation(zipcode);
+            com.weatherApi.Response weatherResponse = responseDao.searchLocation(zipcode);
+
+            com.weatherApi.Current current = weatherResponse.getCurrent();
+            com.weatherApi.Location weatherLocation = weatherResponse.getLocation();
+
+            // Create simplified weather JSON
+            JSONObject weatherJson = new JSONObject();
+
+            JSONObject currentJson = new JSONObject();
+            currentJson.put("feelslike_f", current.getFeelslikeF());
+            currentJson.put("temp_f", current.getTempF());
+            currentJson.put("wind_mph", current.getWindMph());
+            currentJson.put("humidity", current.getHumidity());
+            currentJson.put("wind_dir", current.getWindDir());
+
+            JSONObject locationJson = new JSONObject();
+            locationJson.put("localtime", weatherLocation.getLocaltime());
+            locationJson.put("name", weatherLocation.getName());
+            locationJson.put("lon", weatherLocation.getLon());
+            locationJson.put("lat", weatherLocation.getLat());
+
+            weatherJson.put("current", currentJson);
+            weatherJson.put("location", locationJson);
 
             if (location == null || location.isEmpty() || radiusInMiles <= 0) {
                 return Response.status(Response.Status.BAD_REQUEST)
@@ -66,7 +88,7 @@ public class CombinedService {
 
             JSONObject combinedData = new JSONObject();
 
-            combinedData.put("weather", response);
+            combinedData.put("weather", weatherJson);
 
             if (incidents != null && incidents.getIncidents() != null && !incidents.getIncidents().isEmpty()) {
                 combinedData.put("incidents", incidents.getIncidents());
