@@ -1,18 +1,12 @@
 package com.weathertrafficaggregator.weatherApi;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.weathertrafficaggregator.persistence.CurrentWeatherDao;
 import com.weatherApi.Current;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.weathertrafficaggregator.persistence.CurrentWeatherDao;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class CurrentWeatherTest {
 
