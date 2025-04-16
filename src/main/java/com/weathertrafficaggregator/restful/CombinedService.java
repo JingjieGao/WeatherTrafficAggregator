@@ -112,9 +112,9 @@ public class CombinedService {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/new-location")
-    public Response createNewLocation(@QueryParam("zipcode") String zipcode,
-                                      @QueryParam("location") String location,
-                                      @QueryParam("radius") double radiusInMiles) {
+    public Response createNewLocation(@FormParam("zipcode") String zipcode,
+                                      @FormParam("location") String location,
+                                      @FormParam("radius") double radiusInMiles) {
 
         // curl -X POST "http://localhost:8080/weather_traffic_aggregator_war/api/combined_service/new-location?zipcode=90210&location=Los%20Angeles&radius=10"
         try {
@@ -167,8 +167,8 @@ public class CombinedService {
 
             dao.insert(newWeatherAndTrafficReport);
 
-            return Response.ok(combinedData.toString()).build();
-//            return Response.status(200).entity(newWeatherAndTrafficReport).build();
+//            return Response.ok(combinedData.toString()).build();
+            return Response.status(200).entity(newWeatherAndTrafficReport).build();
         } catch (Exception e) {
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
                     .entity("Internal server error while retrieving data.")
