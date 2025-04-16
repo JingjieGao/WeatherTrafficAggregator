@@ -42,5 +42,7 @@ build/
 /logs
 
 ### Secret ##
+src/main/resources
+src/test/resources
 src/main/resources/.env
 cognito.properties
