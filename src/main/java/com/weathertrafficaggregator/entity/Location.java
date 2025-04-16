@@ -19,7 +19,7 @@ public class Location {
     private String zipcode;
 
     @Column(name = "radius")
-    private int radius;
+    private double radius;
 
     @Column(name ="weatherAndTrafficDetails")
     private String weatherAndTrafficDetails;
@@ -30,7 +30,7 @@ public class Location {
     public Location() {
     }
 
-    public Location(String zipcode, int radius, String weatherAndTrafficDetails) {
+    public Location(String zipcode, double radius, String weatherAndTrafficDetails) {
         this.zipcode = zipcode;
         this.radius = radius;
         this.weatherAndTrafficDetails = weatherAndTrafficDetails;
@@ -77,7 +77,7 @@ public class Location {
      *
      * @return the radius
      */
-    public int getRadius() {
+    public double getRadius() {
         return radius;
     }
 
@@ -86,7 +86,7 @@ public class Location {
      *
      * @param radius the radius
      */
-    public void setRadius(int radius) {
+    public void setRadius(double radius) {
         this.radius = radius;
     }
 
