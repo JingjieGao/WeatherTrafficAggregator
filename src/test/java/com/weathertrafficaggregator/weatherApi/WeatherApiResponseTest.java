@@ -2,6 +2,7 @@ package com.weathertrafficaggregator.weatherApi;
 
 import com.weatherApi.Response;
 import com.weathertrafficaggregator.persistence.WeatherResponseDao;
+import com.weathertrafficaggregator.test.util.Database;
 import io.github.cdimascio.dotenv.Dotenv;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,6 +18,8 @@ public class WeatherApiResponseTest {
     @BeforeEach
     void setup() {
         weatherResponseDao = new WeatherResponseDao();
+        Database database = Database.getInstance();
+        database.runSQL("cleanDB.sql");
     }
 
     private final Logger logger = LogManager.getLogger(this.getClass());
