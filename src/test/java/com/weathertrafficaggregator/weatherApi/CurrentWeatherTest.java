@@ -8,15 +8,29 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+/**
+ * The type Current weather test.
+ */
 public class CurrentWeatherTest {
 
+    /**
+     * The Current weather dao.
+     */
     CurrentWeatherDao currentWeatherDao;
 
+    /**
+     * Sets .
+     */
     @BeforeEach
     void setup() {
         currentWeatherDao = new CurrentWeatherDao();
     }
 
+    /**
+     * Test get current temp c.
+     *
+     * @throws Exception the exception
+     */
     @Test
     public void testGetCurrentTempC() throws Exception {
         String searchQuery = "53597";
