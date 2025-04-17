@@ -2,15 +2,43 @@
 
 ## Resources
 
-### CombinedService (Weather and Traffic)
+### WeatherApiService
 
 | Property   | Description                                       | Type/Format  |
 |------------|---------------------------------------------------|--------------|
 | zipcode    | Unique identifier                                 | string       |
-| location   | Name of the location. For example "Madison"       | string       |
-| radius     | Get traffic information within a specified radius | string       |
-| id         | Get data out of the database                      | int          |
-| locationId | Delete a specific entry in the database            | int          |
+
+### JSON
+```json
+{
+"zipcode": "53714"
+}
+```
+
+### IncidentResource
+
+| Property   | Description                                       | Type/Format |
+|------------|---------------------------------------------------|-------------|
+| location   | Name of the location. For example "Madison"       | string      |
+| radius     | Get traffic information within a specified radius | double      |
+
+### JSON
+```json
+{
+"location": "Madison",
+"radius": "5"
+}
+```
+
+### CombinedService (Weather and Traffic)
+
+| Property   | Description                                       | Type/Format |
+|------------|---------------------------------------------------|---------|
+| zipcode    | Unique identifier                                 | string  |
+| location   | Name of the location. For example "Madison"       | string  |
+| radius     | Get traffic information within a specified radius | double  |
+| id         | Get data out of the database                      | int     |
+| locationId | Delete a specific entry in the database           | int     |
 
 ### JSON
 ```json
@@ -20,6 +48,7 @@
 "radius": "5"
 }
 ```
+
 ## Service Endpoints
 
 | Method | URI                                                                                   | Description                                        |
