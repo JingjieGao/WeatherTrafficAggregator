@@ -12,9 +12,19 @@ import javax.ws.rs.core.Response;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The type Weather api service.
+ */
 @Path("/current")
 public class WeatherApiService {
 
+    /**
+     * Gets current weather.
+     *
+     * @param zipcode the zipcode
+     * @return the current weather
+     * @throws Exception the exception
+     */
     @GET
     @Produces("application/json")
     @Path("searchTerm")

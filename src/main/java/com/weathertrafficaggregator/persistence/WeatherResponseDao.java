@@ -12,12 +12,28 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 
+/**
+ * The type Weather response dao.
+ */
 public class WeatherResponseDao {
     private final Logger logger = LogManager.getLogger(this.getClass());
     private static final Dotenv dotenv = Dotenv.load();
+    /**
+     * The Api key.
+     */
     String apiKey = dotenv.get("WEATHER_API_KEY");
+    /**
+     * The Search url.
+     */
     String searchUrl = dotenv.get("WEATHER_API_QUERY_URL");
 
+    /**
+     * Search location response.
+     *
+     * @param searchString the search string
+     * @return the response
+     * @throws JsonProcessingException the json processing exception
+     */
     public Response searchLocation(String searchString) throws JsonProcessingException {
         Client client = ClientBuilder.newClient();
         WebTarget target =
