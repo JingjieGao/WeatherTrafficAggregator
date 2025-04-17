@@ -116,7 +116,8 @@ public class CombinedService {
                                       @FormParam("location") String location,
                                       @FormParam("radius") double radiusInMiles) {
 
-        // curl -X POST "http://localhost:8080/weather_traffic_aggregator_war/api/combined_service/new-location?zipcode=90210&location=Los%20Angeles&radius=10"
+        // curl -X POST curl -X POST "http://localhost:8080/weather_traffic_aggregator_war/api/combined_service/new-location" \
+        //     -d "zipcode=90210&location=Los Angeles&radius=10"
         try {
             WeatherResponseDao responseDao = new WeatherResponseDao();
             com.weatherApi.Response weatherResponse = responseDao.searchLocation(zipcode);
