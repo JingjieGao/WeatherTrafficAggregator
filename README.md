@@ -8,19 +8,23 @@ Commuters and travelers face significant delays due to unexpected weather condit
 
 The service provides the following:
 * Get current weather data for a specified location
-* Get weather alerts
-* Get distances and estimated travel times between locations
-* Get directions, including the optimal route considering traffic data
+* Get incidents by location and radius
+* Get combined information by zipcode, location, and radius
+* Post weather and traffic report
 
 ---
 
 ### Resources
 
 * Traffic report
+    * TomTomAPI
+    * GET /geocoding.json
+    * GET /traffic.json
 * Weather report
     * WeatherAPI
     * GET /current.json
-* Incident report (maybe?)
+* Incident report
+    * POST /new-location
 
 ### Project Technologies/Techniques
 

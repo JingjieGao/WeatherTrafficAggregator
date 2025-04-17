@@ -89,7 +89,7 @@ and the team is updated on the changes as soon as possible.
 * Selected project way: Manipulated information from existing services and presented it in a new way
   * Application name: Weather & Traffic aggregator
     * WeatherAPI.com
-    * Google Maps API
+    * tomtom.com
     
 ---
 ### Development/Review/Branching Strategy
