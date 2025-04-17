@@ -10,6 +10,7 @@ import org.hibernate.Transaction;
 import org.hibernate.query.criteria.HibernateCriteriaBuilder;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,6 +22,7 @@ public class GenericDao<T> {
     private Class<T> type;
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    public GenericDao() {}
     /**
      * Instantiates a new Generic dao.
      *
@@ -102,12 +104,13 @@ public class GenericDao<T> {
      * @return the all
      */
     public List<T> getAll() {
+        List<T> list = new ArrayList<>();
         Session session = getSession();
 
         HibernateCriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<T> query = builder.createQuery(type);
         Root<T> root = query.from(type);
-        List<T> list = session.createSelectionQuery( query ).getResultList();
+        list = session.createSelectionQuery( query ).getResultList();
 
         logger.debug("The list of " + list);
         session.close();

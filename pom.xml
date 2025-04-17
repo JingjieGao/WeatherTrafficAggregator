@@ -14,7 +14,7 @@
     <junit.version>4.13.1</junit.version>
     <junit-vintage-version>4.12.0</junit-vintage-version>
     <javax.version>7.0</javax.version>
-    <mysql-version>8.0.28</mysql-version>
+    <mysql-version>9.2.0</mysql-version>
     <jstl-version>1.2</jstl-version>
     <log4j-version>2.17.1</log4j-version>
     <jupiter-version>5.0.0</jupiter-version>
@@ -70,8 +70,8 @@
      https://mvnrepository.com/artifact/mysql/mysql-connector-java
     -->
     <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
+      <groupId>com.mysql</groupId>
+      <artifactId>mysql-connector-j</artifactId>
       <version>${mysql-version}</version>
     </dependency>
 

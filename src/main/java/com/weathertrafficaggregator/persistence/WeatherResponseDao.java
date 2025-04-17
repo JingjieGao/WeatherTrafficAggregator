@@ -2,7 +2,6 @@ package com.weathertrafficaggregator.persistence;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.weatherApi.Current;
 import com.weatherApi.Response;
 import io.github.cdimascio.dotenv.Dotenv;
 import org.apache.logging.log4j.LogManager;

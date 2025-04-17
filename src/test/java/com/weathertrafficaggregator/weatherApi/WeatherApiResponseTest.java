@@ -1,16 +1,16 @@
 package com.weathertrafficaggregator.weatherApi;
 
-import com.weathertrafficaggregator.persistence.WeatherResponseDao;
 import com.weatherApi.Response;
+import com.weathertrafficaggregator.persistence.WeatherResponseDao;
+import com.weathertrafficaggregator.test.util.Database;
+import io.github.cdimascio.dotenv.Dotenv;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-
-import io.github.cdimascio.dotenv.Dotenv;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
 public class WeatherApiResponseTest {
     WeatherResponseDao weatherResponseDao;
@@ -18,6 +18,8 @@ public class WeatherApiResponseTest {
     @BeforeEach
     void setup() {
         weatherResponseDao = new WeatherResponseDao();
+        Database database = Database.getInstance();
+        database.runSQL("cleanDB.sql");
     }
 
     private final Logger logger = LogManager.getLogger(this.getClass());

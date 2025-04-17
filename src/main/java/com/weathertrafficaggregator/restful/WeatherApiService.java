@@ -4,7 +4,10 @@ import com.weathertrafficaggregator.persistence.WeatherResponseDao;
 import com.weatherApi.Current;
 import com.weatherApi.Location;
 
-import javax.ws.rs.*;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 import java.util.HashMap;
 import java.util.Map;

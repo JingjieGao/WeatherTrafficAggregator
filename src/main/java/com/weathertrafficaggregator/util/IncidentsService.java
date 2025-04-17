@@ -1,15 +1,8 @@
 package com.weathertrafficaggregator.util;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mapquestApi.traffic.incidents.Incidents;
 import com.mapquestApi.traffic.incidents.IncidentsItem;
 import com.weathertrafficaggregator.persistence.IncidentDao;
-import org.jvnet.hk2.annotations.Service;
-
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Singleton;
-import java.util.List;
 
 /**
  * The type Incidents service.

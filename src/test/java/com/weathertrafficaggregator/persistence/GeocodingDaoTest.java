@@ -3,7 +3,9 @@ package com.weathertrafficaggregator.persistence;
 import com.mapquestApi.traffic.geocoding.LocationsItem;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**

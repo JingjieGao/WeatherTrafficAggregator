@@ -1,7 +1,6 @@
-package com.weathertrafficaggregator.util;
+package com.weathertrafficaggregator.test.util;
 
-
-import com.weathertrafficaggregator.persistence.PropertiesLoader;
+import com.weathertrafficaggregator.util.PropertiesLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,29 +21,32 @@ import java.util.Properties;
  */
 
 public class Database implements PropertiesLoader {
-    private final Logger logger = LogManager.getLogger(this.getClass());
+
     // create an object of the class Database
     private static Database instance = new Database();
+
+    // create the logger
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     private Properties properties;
     private Connection connection;
 
     /** private constructor prevents instantiating this class anywhere else
      **/
-    public Database() {
-        init();
+    private Database() {
+        loadProperties();
+
     }
 
     /** load the properties file containing the driver, connection url, userid and pwd.
-     * Using the loadProperties method from the PropertiesLoader interface
      */
-    private void init() {
+    private void loadProperties() {
         try {
-            properties = loadProperties("/database.properties");
+            properties = new Properties(loadProperties("/database.properties"));
         } catch (Exception e) {
-            logger.error("Database.loadProperties()..." + e);
-            logger.error(e);
+            logger.error("Database.loadProperties()...", e);
         }
+
     }
 
     /** get the only Database object available
@@ -84,7 +86,7 @@ public class Database implements PropertiesLoader {
             try {
                 connection.close();
             } catch (SQLException e) {
-                logger.error("Cannot close connection" + e);
+                logger.error("Cannot close connection", e);
             }
         }
 
@@ -120,13 +122,12 @@ public class Database implements PropertiesLoader {
             }
 
         } catch (SQLException se) {
-            logger.error(se);
+            logger.error("SQL Exception", se);
         } catch (Exception e) {
-            logger.error(e);
+            logger.error("Exception", e);
         } finally {
             disconnect();
         }
 
     }
 }
-

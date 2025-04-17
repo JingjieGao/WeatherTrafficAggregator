@@ -1,7 +1,5 @@
 package com.weathertrafficaggregator.restful;
 
-import com.weathertrafficaggregator.util.IncidentsService;
-
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
