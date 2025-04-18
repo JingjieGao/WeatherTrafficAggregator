@@ -18,6 +18,7 @@
     <jstl-version>1.2</jstl-version>
     <log4j-version>2.17.1</log4j-version>
     <jupiter-version>5.0.0</jupiter-version>
+    <flexmark-version>0.64.8</flexmark-version>
     <junit-platform-runner-version>1.0.0</junit-platform-runner-version>
     <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
     <maven-surefire-plugin-version>2.19</maven-surefire-plugin-version>
@@ -37,6 +38,12 @@
       <artifactId>junit</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.vladsch.flexmark</groupId>
+      <artifactId>flexmark-all</artifactId>
+      <version>${flexmark-version}</version>
     </dependency>
 
     <dependency>
