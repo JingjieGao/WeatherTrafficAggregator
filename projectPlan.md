@@ -14,43 +14,43 @@
 ---
 
 ### Week 10 - API integration & UI creation
-- [ ] Update POM with necessary dependencies
-- [ ] Determine how to document API (SoapUI, CURL, Postman etc.)
-- [ ] Determine which data & API routes we want to incorporate from WeatherAPI & Google Map
-- [ ] Make test calls to routes or use documentation to determine which fields correspond to the desired data
-- [ ] Determine routes & paths for API calls<br><br>
+- [X] Update POM with necessary dependencies
+- [X] Determine how to document API (SoapUI, CURL, Postman etc.)
+- [X] Determine which data & API routes we want to incorporate from WeatherAPI & Google Map
+- [X] Make test calls to routes or use documentation to determine which fields correspond to the desired data
+- [X] Determine routes & paths for API calls<br><br>
 
-- [ ] Set up project with PropertiesLoader interface
-- [ ] Create google-api and weather-api properties files & update resource directory
-- [ ] Create TrafficReport bean
-- [ ] Create WeatherReport bean
-- [ ] Set up project with GenericDao
-- [ ] Create TrafficReport tests w/ ClientBuilder & WebTarget
-- [ ] Create WeatherReport tests w/ ClientBuilder & WebTarget<br><br>
-- [ ] Update weekly reflection
+- [X] Set up project with PropertiesLoader interface
+- [X] Create google-api and weather-api properties files & update resource directory
+- [X] Create TrafficReport bean
+- [X] Create WeatherReport bean
+- [X] Set up project with GenericDao
+- [X] Create TrafficReport tests w/ ClientBuilder & WebTarget
+- [X] Create WeatherReport tests w/ ClientBuilder & WebTarget<br><br>
+- [X] Update weekly reflection
 
 ---
 
 ### Week 11 - Web service documentation
-- [ ] Create TrafficDao + map JSON -> Objects
-- [ ] Create WeatherDao + map JSON -> Objects
-- [ ] Create REST entry point
-- [ ] Create paths + routes for CRUD retrieval of resources
-- [ ] Test routes (CURL, SoapUI, etc) for success
+- [X] Create TrafficDao + map JSON -> Objects
+- [X] Create WeatherDao + map JSON -> Objects
+- [X] Create REST entry point
+- [X] Create paths + routes for CRUD retrieval of resources
+- [X] Test routes (CURL, SoapUI, etc) for success
   <br>
     - Document successful routes
-- [ ] Style with Bootstrap<br><br>
-- [ ] Update weekly reflection
+- [X] Style with Bootstrap<br><br>
+- [X] Update weekly reflection
 ---
 
 ### Week 12 - Testing, enhancing, and deploying
 
-- [ ] Complete testing
-- [ ] Double check for JavaDoc, sys.out.print, TODOs
-- [ ] Double check API documentation & resources
-- [ ] Deploy to AWS
-- [ ] Final changes made
-- [ ] Record video for presentation
+- [X] Complete testing
+- [X] Double check for JavaDoc, sys.out.print, TODOs
+- [X] Double check API documentation & resources
+- [X] Deploy to AWS
+- [X] Final changes made
+- [X] Record video for presentation
 
 ---
 
