@@ -32,7 +32,7 @@ The service provides the following:
 
 | Part | Video                                       | Author     |
 |------|---------------------------------------------|------------|
-| 1    |                                             |            |
+| 1    | https://youtu.be/Y00xW5tDujo                | Jake Cipri |
 | 2    | https://www.youtube.com/watch?v=kv3GzzE6dRo | Jane Gao   |
 | 3    | https://www.youtube.com/watch?v=uWO3j1SPsXQ | Alex Burgy |
 
